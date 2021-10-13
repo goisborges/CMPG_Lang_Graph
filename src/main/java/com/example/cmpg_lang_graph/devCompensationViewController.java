@@ -26,10 +26,10 @@ public class devCompensationViewController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-//        barChart.getData().addAll(DBUtility.getCompensation());
-//        barChart.setLegendVisible(false);
-//
-//        compensationAxis.setLabel("Yearly Compensation");
-//        yearsCodingAxis.setLabel("Years Coding");
+        barChart.getData().addAll(DBUtility.getCompensation());
+        barChart.setLegendVisible(false);
+
+        compensationAxis.setLabel("Yearly Compensation");
+        yearsCodingAxis.setLabel("Years Coding");
     }
 }
