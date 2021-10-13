@@ -1,0 +1,8 @@
+.left-pane{
+    -fx-background-color: #4a6c6f;
+}
+.title{
+    -fx-font-size: 20px;
+    -fx-font-family: Gabriola;
+    -fx-margin-left: 10px;
+}
