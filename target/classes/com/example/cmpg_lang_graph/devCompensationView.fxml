@@ -2,12 +2,16 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.chart.BarChart?>
 <?import javafx.scene.chart.CategoryAxis?>
 <?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
@@ -42,22 +46,45 @@
          <left>
             <Pane id="left-pane" prefHeight="200.0" prefWidth="200.0" styleClass="left-pane" stylesheets="@styles.css" BorderPane.alignment="CENTER">
                <children>
-                  <JFXButton contentDisplay="CENTER" layoutX="18.0" layoutY="61.0" prefHeight="75.0" prefWidth="166.0" ripplerFill="WHITE" text="Compensation VS Years Coding" textAlignment="CENTER" textFill="#af5d63" wrapText="true">
+                  <JFXButton contentDisplay="CENTER" layoutX="18.0" layoutY="61.0" prefHeight="75.0" prefWidth="166.0" ripplerFill="#ed474a" text="Compensation VS Years Coding" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                      <font>
                         <Font size="19.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
                   </JFXButton>
-                  <JFXButton contentDisplay="CENTER" layoutX="18.0" layoutY="141.0" prefHeight="75.0" prefWidth="166.0" ripplerFill="#a14d4d" text="Language VS Users" textAlignment="CENTER" textFill="#af5d63" wrapText="true">
+                  <JFXButton contentDisplay="CENTER" layoutX="18.0" layoutY="141.0" prefHeight="75.0" prefWidth="166.0" ripplerFill="#ed474a" text="Language VS Users" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                      <font>
                         <Font size="19.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <BoxBlur />
+                     </effect>
                   </JFXButton>
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="5.0" prefHeight="46.0" prefWidth="187.0" text="GRAPHS" textAlignment="CENTER" textFill="#c0bcb5" wrapText="true">
                      <font>
                         <Font size="41.0" />
                      </font>
                   </Label>
-                  <JFXButton alignment="CENTER" layoutX="11.0" layoutY="320.0" prefHeight="66.0" prefWidth="176.0" text="Click to know more about how we filtered the database data" textAlignment="CENTER" wrapText="true" />
+                  <JFXButton alignment="CENTER" layoutX="11.0" layoutY="380.0" prefHeight="66.0" prefWidth="176.0" text="Click to know more about how we filtered the database data" textAlignment="CENTER" wrapText="true" />
+                  <JFXButton buttonType="RAISED" defaultButton="true" layoutX="35.0" layoutY="278.0" onAction="#changeScenes" text="VIEW TABLE" textAlignment="CENTER" textFill="#af5d63">
+                     <font>
+                        <Font name="Optima Regular" size="19.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <GaussianBlur />
+                     </effect>
+                  </JFXButton>
                </children>
             </Pane>
          </left>
@@ -70,7 +97,7 @@
                      </font>
                   </Label>
                   <Hyperlink alignment="CENTER" layoutX="15.0" layoutY="44.0" prefHeight="23.0" prefWidth="768.0" text="https://insights.stackoverflow.com/survey/2020https://insights.stackoverflow.com/survey/2020" />
-                  <Separator layoutX="270.0" layoutY="-1.0" prefWidth="200.0" />
+                  <Separator layoutX="417.0" layoutY="-1.0" prefHeight="8.0" prefWidth="200.0" />
                </children>
             </Pane>
          </bottom>
